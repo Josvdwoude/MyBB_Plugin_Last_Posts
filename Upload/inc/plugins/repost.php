@@ -8,7 +8,7 @@
  *
  * MyBB Version: 1.8
  *
- * Plugin Version: 1.1
+ * Plugin Version: 1.2
  * 
  */
 
@@ -59,7 +59,7 @@ function repost_activate() {
 					'title' => $lang->repost_title_0,
 					'description' => $lang->repost_desc_0,
 					'disporder' => $rows + '1',
-					'isdefault' => 'no',
+					'isdefault' => '0',
 					);
 
 				$db->insert_query('settinggroups',$repost_group);

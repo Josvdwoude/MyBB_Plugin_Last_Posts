@@ -20,3 +20,14 @@ Enjoy :D
 - modified plugin styling issues and a few other minor issues for 1.8.x compatibility
 - added further language files & localization
 - modified to also remove plugin loading in all global pages as that was a little excessive and opted for it to now only load in forum index and portal
+
+
+* Updated to version 1.0.2 for MyBB 1.8.x usage by Vintagedaddyo
+
+Further localization support
+
+-english
+-englishgb
+-espanol
+-french
+-italiano

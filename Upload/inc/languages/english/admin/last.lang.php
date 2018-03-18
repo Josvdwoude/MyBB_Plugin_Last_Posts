@@ -8,7 +8,7 @@
  *
  * MyBB Version: 1.8
  *
- * Plugin Version: 1.1
+ * Plugin Version: 1.2
  * 
  */
 
@@ -19,7 +19,7 @@ $l['repost_Desc'] = 'Show Last posts via the header of index and portal pages';
 $l['repost_Web'] = 'http://community.mybb.com/user-6029.html';
 $l['repost_Auth'] = 'Hamed & updated by Vintagedaddyo';
 $l['repost_AuthSite'] = 'http://ghasemzadeh.ir';
-$l['repost_Ver'] = '1.0.1';
+$l['repost_Ver'] = '1.0.2';
 $l['repost_GUID'] = '';
 $l['repost_Compat'] = '18*';
 
@@ -81,7 +81,7 @@ $l['repost_desc_8'] = "Do you want to display post time?";
 
 $l['repost_name_9'] = "not_show_post";
 $l['repost_title_9'] = "Hidden Forums";
-$l['repost_desc_9'] = "Enter the forums IDs that we do not show last post of them.Separate them with a comma (,).";
+$l['repost_desc_9'] = "Enter the forums IDs that we do not show last post of them. Separate them with a comma (,).";
 
 // Settings 11
 
