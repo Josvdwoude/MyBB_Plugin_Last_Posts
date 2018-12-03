@@ -265,7 +265,7 @@ function repost() {
 				$lang->load("last");
 				if($mybb->settings['showrepost'] == '1') {
 								$threadlist = '';
-								$hiddenforums = explode(',',$mybb->settings['not_show_post']);
+								$hiddenforums = explode(',',htmlspecialchars_uni($mybb->settings['not_show_post']));
 								if(is_array($hiddenforums)) {
 												foreach($hiddenforums as $fid) {
 																$fid_array[] = intval($fid);
@@ -284,7 +284,7 @@ function repost() {
 		WHERE 1=1 $unviewwhere AND t.visible='1' AND t.closed NOT LIKE 'moved|%' AND  t.fid NOT IN(".
 																$hiddenforums.")
 		ORDER BY t.lastpost DESC 
-		LIMIT 0, ".$mybb->settings['countreposts']);
+		LIMIT 0, ".htmlspecialchars_uni($mybb->settings['countreposts']));
 								}
 								else {
 												$query = $db->query("
@@ -293,7 +293,7 @@ function repost() {
 		LEFT JOIN ".TABLE_PREFIX."users u ON (u.uid=t.uid)
 		WHERE 1=1 $unviewwhere AND t.visible='1' AND t.closed NOT LIKE 'moved|%'
 		ORDER BY t.lastpost DESC 
-		LIMIT 0, ".$mybb->settings['countreposts']);
+		LIMIT 0, ".htmlspecialchars_uni($mybb->settings['countreposts']));
 								}
 								while($thread = $db->fetch_array($query)) {
 												if($mybb->user['uid']) {
