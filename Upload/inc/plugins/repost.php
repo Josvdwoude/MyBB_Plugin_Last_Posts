@@ -51,8 +51,8 @@ function repost_activate() {
 
                 $lang->load("last");
 
-				$query = $db->simple_select("settinggroups","COUNT(*) as rows");
-				$rows = $db->fetch_field($query,"rows");
+				$query = $db->simple_select("settinggroups","COUNT(*) as r");
+				$rows = $db->fetch_field($query,"r");
 
 				$repost_group = array(
  					'name' => $lang->repost_name_0,
